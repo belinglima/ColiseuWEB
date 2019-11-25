@@ -1,0 +1,91 @@
+.sidenav {
+  cursor: pointer;
+  padding-top: 0px;
+  width: 90px;
+  position: absolute;
+	top: 0px;
+  z-index: 9990;
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+.targetTopo {
+  height: 160px;
+  -webkit-border-radius: 0 0 50px 50px;
+  border-radius: 0 0 50px 50px;
+}
+
+.ajuste {
+  margin-top: 50px;
+}
+
+.conteudo {
+  width: 80%;
+}
+
+.corPadrao {
+  background-color:#39465f;
+}
+
+.borda {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.orelha {
+	position: absolute;
+	top: 140px;
+	left: 70px;
+	width: 70px;
+	height: 70px;
+	background:
+		radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 50px, #39465f 15px);
+}
+
+
+.loader{
+margin-top: 20%;
+}
+
+.fotos{
+  border: 1px solid #39465f;
+}
+
+.under {
+  text-decoration: underline #fff;
+}
+
+.aaa{
+  background-color:#39465f;
+  background-image:linear-gradient(to bottom, transparent 1px, rgba(0,0,0,.1) 1px);
+  background-size: auto 2px;
+  color: #fff;
+  /* font-weight: bold; */
+}
+
+.te {
+  color: #fff;
+  /* font-weight: bold; */
+}
+
+/* .linhadentro{
+  width: 100px
+} */
+
+/* 
+.fundo {
+  background-color: rgba(57,70,95, 0.8);
+} */
+
+@media only screen and (max-width: 992px) 
+{ 
+  .orelha {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {  }
+@media only screen and (min-width: 600px) {  }
+@media only screen and (min-width: 768px) {  }
+@media only screen and (min-width: 1382px) {  }
