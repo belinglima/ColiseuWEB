@@ -1,68 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Proposta Coliseu
 
-## Available Scripts
+Proposta de um sistema distribuido, como metodo de avaliação, para a cadeira de Sistemas Distribuidos, aonde irei demonstrar como funciona um sistema distribuido tendo um api como principal sistema de controle geral do sistema aonde é possivel executar cruds de, usuario, companya, avaliação. e tambem para que o sistema seja seguro foi executado a implementação de um Token no formado de JWT, aonde cumpre a segurança dos sistemas conectados.
 
-In the project directory, you can run:
+## Tarefas do Trabalho
 
-### `npm start`
+Tarefas: 1 - Desenvolver a descrição do sistema a ser entregue como avaliação parcial da disciplina de SD. 
+ - a. Documentar a proposta com os requisitos funcionais e o protótipo do diagrama ER. 
+ 
+ 2- Definir o sistema no formato multiplataforma, ou seja, este deve ser operacional em plataformas distintas (Web, APP, Estrutura local na máquina cliente...). 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3- Desenvolver uma API para alimentação do sistema. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+4- O projeto pode contar com bancos de dados distintos, middleware e Webservice. 
 
-### `npm test`
+5- Definir as tecnologias que serão utilizadas. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6- Desenvolver a modelagem do sistema (CRUD ou prototipação).
 
-### `npm run build`
+## Proposta do sistema
+- Introdução:  A academia Coliseu localizada no bairro Areal necessita de um aplicativo para medidas, gerenciamento e controle de series dos seus alunos, aonde os mesmos consigam ter os dados disponíveis e manter um controle de seu andamento.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Diagrama ER
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+imagem do diagrama ERERERERRERERRRRRR
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Descrição do sistema
+- O Sistema de gerenciamento da academia coliseu, ira contar com um cadastro de usuário aonde o mesmo através do acesso tera controle de series, avaliações, Acompanhamento de evolução dentro da academia, fotos de controle na avaliação e datas de todos os registros, com estes dados tanto academia quanto o usuário conseguira ter acesso aos seus registros.
 
-### `npm run eject`
+- Na parte WEB aonde está sera de controle da academia os mesmos conseguiram realizar todo o gerenciamento de seus alunos/usuários.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- O Sistema contara com um API que estará disponível para todo o gerenciamento da mesma com autenticação de acesso para manter sua confidencialidade.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Requisitos funcionais
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+RF001 – Gerenciamento de usuário
+RF002 – Gerenciamento de Empresa.
+RF003 – Cadastro de Avaliação
+RF004 – Upload foto Avaliação
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Requisitos não funcionais
 
-## Learn More
+RNF001 – Aplicativo em com possibilidade de MultiPlataforma.
+RNF002 – Vai possuir uma autenticação no padrão JWT.
+RNF003 – O Aplicativo vai ser executado de forma nativa no sistema operacional Android
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tecnologias Utilizadas
+**BackEnd:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Adonis** [https://adonisjs.com/](https://adonisjs.com/) o AdonisJS é um framework para Node JS que vai nos permitir focar na regra de negócio da nossa aplicação sem perder muito tempo com o funcionamento por trás de funcionalidades comuns como manipulação do banco de dados, envio de e-mail, autenticação, etc…
 
-### Code Splitting
+  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**Aplicativo:**
 
-### Analyzing the Bundle Size
+**React Native** [https://www.npmjs.com/package/react-native](https://www.npmjs.com/package/react-native) o React Native é uma estrutura de aplicativo móvel de código aberto criada pelo Facebook. Ele é usado para desenvolver aplicativos para Android, iOS e UWP, permitindo que os desenvolvedores usem o React junto com os recursos da plataforma nativa.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+  
 
-### Making a Progressive Web App
+**Sistema WEB:**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+**React JS** [https://pt.wikipedia.org/wiki/React_(JavaScript)](https://pt.wikipedia.org/wiki/React_(JavaScript)) o React JS é uma biblioteca JavaScript de código aberto para criar interfaces de usuário. É mantido pelo Facebook, Instagram e uma comunidade de desenvolvedores individuais e outras empresas.
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Prototipação
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Objetivo
+- Objetivo: Desenvolver o projeto do sistema distribuído para disciplina de SD
+
+
+
