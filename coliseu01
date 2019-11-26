@@ -1,0 +1,42 @@
+## Parte do sistema distribuido
+
+-API - Sistema Principal
+```
+Route
+  .group(() => {
+    Route.resource('evaluation', 'EvaluationController').apiOnly()
+    Route.resource('company', 'CompanyController').apiOnly()
+    Route.resource('user', 'UserController').apiOnly()
+    Route.resource('weight', 'WeightController').apiOnly()
+  }).prefix('auth').middleware(['auth'])
+```
+- aqui tenho o middleware, aonde exerce um papel muito importante no sistema como um todo pois o mesmo é responsavel por gerenciar todas as requisições de entrada e saida, aonde somente permite acesso a cadastrar, editar ou excluir, se o usuario que esta solicitando é realmente um administrador, se o mesmo for este usuario recebe como saida um token.
+
+### Rotas de Acesso em geral
+Aqui podem ser executados as seguintes rotas do sistema, "/evaluation", "/company", "/user", "/weight"
+totas as rotas possuem os mesmos metodos
+
+- POST (Cadastra)
+- GET (Pega os dados em geral)
+- GET/:id (Pega os dados do id especifico)
+- PUT (Edita informações)
+- DELETE (Deleta informações em geral)
+- DELETE:id (Deleta informações especificas)
+
+## WEB
+
+```
+const  PrivateRoute  = ({ component: Component, ...rest }) => (
+<Route
+	{...rest}
+	render={props  =>
+	isAuthenticated() ? (
+	<Component  {...props}  />
+	) : (
+		<Redirect  to={{ pathname:  "/login", state: { from:  props.location } }}  />
+	)}
+/>
+);
+```
+ 
+ - este sistema pega o token da api que o middleware mandou e valida o mesmo se o token for valido, o sistema consegue direcionar o administrador, para as paginas internas.
